@@ -1,0 +1,17 @@
+---
+layout: home
+title: Home
+description: ""
+---
+<div class="content-section welcome col text-center">
+	<h1 class="roboto">ben johnson - web developer</h1>
+	<h2 class="roboto">minneapolis, mn</h2>
+</div>
+<div class="content-section work col text-center py-5">
+	<h2 class="py-2 my-2">my work</h2>
+	<div class="row">
+		{% for post in site.posts %}
+			<div class="col-lg-4 post"><a href="{{ post.url }}"><img class="img-fluid" src="{{ post.img }}" /><span class="p-1 roboto text-lowercase">{{post.title}}</span></a></div>
+		{% endfor %}
+	</div>
+</div>

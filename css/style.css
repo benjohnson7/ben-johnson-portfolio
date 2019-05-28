@@ -1,0 +1,33 @@
+body {
+	font-family: 'Sofia Pro', sans-serif;
+	/* background: #0F2027;
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+	 */
+	 color: #444;
+}
+
+.roboto {
+	font-family: 'Roboto Mono', monospace;
+}
+.post {
+	overflow: hidden;
+	position: relative;
+}
+.post img {
+	transition: transform .1s ease;
+}
+.post img:hover {
+	transform: scale(1.1)
+}
+.post span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	background-color: rgba(0, 0, 0, .4);
+}
+.copy {
+	border-top: 2px solid black;
+}
