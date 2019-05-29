@@ -1,26 +1,29 @@
 body {
-	font-family: 'Sofia Pro', sans-serif;
-	/* background: #0F2027;
-background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-	 */
-	 color: #444;
+	font-family: 'Roboto Mono', monospace;
+	background: #2C3E50;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #4CA1AF, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #4CA1AF, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #eee;
 }
 
 .roboto {
 	font-family: 'Roboto Mono', monospace;
 }
-.post {
+.site {
 	overflow: hidden;
 	position: relative;
+	margin-bottom: 20px;
+	
 }
-.post img {
-	transition: transform .1s ease;
+.site img {
+	transition: transform .1s ease, filter .3s ease;
+	filter: grayscale(1)
 }
-.post img:hover {
-	transform: scale(1.1)
+.site:hover img {
+	transform: scale(1.1);
+	filter: grayscale(0)
 }
-.post span {
+.site span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -29,5 +32,8 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
 	background-color: rgba(0, 0, 0, .4);
 }
 .copy {
-	border-top: 2px solid black;
+	border-top: 2px solid #eee;
+}
+.copy span {
+	font-size: .8rem;
 }
