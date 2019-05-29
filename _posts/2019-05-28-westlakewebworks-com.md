@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Westlake Web Works"
-img: "/img/westlakewebworks-com.png"
+img: "/img/westlakewebworks-com.jpg"
 link: "https://westlakewebworks.com"
 ---
 
