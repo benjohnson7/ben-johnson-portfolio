@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Home
-description: ""
+description: "Ben Johnson is a Minneapolis, Minnesota based Front End Web Developer and Systems Administrator."
 ---
 <div class="content-section welcome col text-center">
 	<h1>ben johnson - web developer</h1>
@@ -11,7 +11,7 @@ description: ""
 	<h2 class="py-2 my-2">my work</h2>
 	<div class="row justify-content-md-center">
 		{% for post in site.posts %}
-			<div class="col-lg-4 site"><a target="_blank" href="{{ post.link }}"><img class="img-fluid" src="{{ post.img }}" /><span class="p-1 roboto text-lowercase">{{post.title}}</span></a></div>
+			<div class="col-lg-4 site"><a rel="noopener" target="_blank" href="{{ post.link }}"><img class="img-fluid" src="{{ post.img }}" alt="{{ post.title }}"/><span class="p-1 roboto text-lowercase">{{post.title}}</span></a></div>
 		{% endfor %}
 	</div>
 </div>
